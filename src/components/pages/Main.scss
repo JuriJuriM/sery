@@ -1,0 +1,111 @@
+.main {
+    padding-top: 80px;
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-family: serif;
+    }
+    &__warrior {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    &__warrior img {
+        min-width: 100%;
+        display: block;
+    }
+    &__text-one {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 15px;
+        font-family: serif;
+    }
+    &__row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    &__column {
+        flex: 0 0 49.5%;
+    }
+    &__text {
+        font-size: 24px;
+        text-indent: 20px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    &__photo {
+        flex: 1 1 auto;
+        margin-bottom: 15px;
+    }
+    &__photo img {
+        max-width: 100%;
+    }
+    &__row-two {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    &__column-two {
+        flex: 0 0 49.5%;
+    }
+    &__text-two {
+        font-size: 24px;
+        text-indent: 20px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+    &__photo-two {
+        flex: 1 1 auto;
+        margin-bottom: 15px;
+    }
+    &__photo-two img {
+        max-width: 100%;
+    }
+    &__row-three {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    &__column-three {
+        flex: 0 0 49.5%;
+    }
+    &__photo-three {
+        flex: 1 1 auto;
+        margin-bottom: 15px;
+    }
+    &__photo-three img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 710px) {
+    .main {
+        &__text,
+        &__text-one,
+        &__text-two {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 555px) {
+    .main {
+        &__row {
+            display: block;
+        }
+        &__row-two {
+            display: block;
+        }
+        &__row-three {
+            display: block;
+        }
+    }
+}
