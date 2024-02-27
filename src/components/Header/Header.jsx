@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './Header.scss'
 import Burger from './menu.svg.png'
 import BurgerClose from './close-menu.png'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Main from '../pages/Main'
 import Second from '../pages/Second'
 
@@ -30,12 +31,10 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <Router className='router'>
-                <Routes>
-                    <Route path='/' element={<Main />} />
-                    <Route path='/second' element={<Second />} />
-                </Routes>
-            </Router>
+            <Routes>
+                <Route path='/' element={<Main />} />
+                <Route path='/second' element={<Second />} />
+            </Routes>
         </>
     )
 }
